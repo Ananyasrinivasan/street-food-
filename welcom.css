@@ -1,0 +1,67 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    text-align: center;
+    background-color: #dc8aef;
+    color: #0b0b0b;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin-top: 50px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    animation: bounce 1s infinite alternate;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+.states {
+    display: flex;
+    flex-wrap: wrap;   /* Ensures responsiveness */
+    justify-content: center;  /* Centers items horizontally */
+    gap: 20px;         /* Adds space between images */
+    margin-top: 20px;
+}
+
+.state {
+    text-align: center;
+    width: 200px;  /* Adjusts width to fit side by side */
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.state:hover {
+    transform: scale(1.05);
+}
+
+.food-img {
+    width: 100%;        /* Responsive image */
+    border: 5px solid #171616;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.food-img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(16, 16, 16, 0.7);
+}
+
+/* Fun Animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-10px); }
+}
+
+
+
+
+

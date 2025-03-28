@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebcc;
+    text-align: center;
+}
+
+/* Header Styling */
+header {
+    background-color: #d32f2f;
+    color: white;
+    padding: 20px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Food Section Styling (Grid Layout) */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Two columns */
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+/* Food Item Layout (Image Side by Side with Text) */
+.food-item {
+    display: flex;
+    background: white;
+    align-items: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.food-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Image Styling */
+.food-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Text Styling */
+.food-info {
+    text-align: left;
+}
+
+.food-info h2 {
+    color: #d32f2f;
+    font-size: 22px;
+    margin: 5px 0;
+}
+
+.food-info p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Back Button Styling */
+.back-button {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 12px 25px;
+    font-size: 18px;
+    color: white;
+    background-color: #d32f2f;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #9a0007;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #d32f2f;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    margin-top: 30px;
+}
